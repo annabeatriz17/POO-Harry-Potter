@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0.8rem;
+  text-align: center;
+}
+
+h1 {
+  margin-left: 12rem;
+}
+
+h2 {
+  text-align: left;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 1.5rem 0 0 0;
+}
+
+p {
+  margin: 0;
+  text-align: left;
+  padding: 1.5rem 0 0 0;
+}
+
+ul {
+  margin: 0.25rem;
+  text-align: left;
+  padding-top: 1.5rem;
+}
+
+#cabeçalho {
+  display: flex;
+  background-color: lightgray;
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 325px 500px auto;
+  gap: 1rem;
+  position: relative;
+}
+
+#imagem-casa {
+  width: auto;
+  height: 375px;
+  border-radius: 5rem;
+}
+
+#container-video {
+  position: relative;
+}
+
+#canvas-container canvas {
+  border-radius: 1.5rem;
+  background-color: #000;
+}
+
+#chapéu {
+  position: absolute;
+  top: -10rem;
+  left: 50%;
+  width: 375px;
+  height: auto;
+  z-index: 1;
+  display: none;
+  left: calc(55px);
+  animation: cair 1s ease-out, balanco 1.75s 1.5s infinite;
+}
+
+@keyframes cair {
+  0% {
+    top: -350px;
+  }
+  100% {
+    top: -145px;
+  }
+}
+
+@keyframes balanco {
+  0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-12deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
+#parabéns {
+  display: none;
+}
+
+button {
+  margin: 0.75rem;
+  padding: 0.4rem 2rem;
+  border-radius: 1rem;
+  font-size: large;
+  box-shadow: 4px 4px 15px 1px black;
+  background-color: lightgray;
+  cursor: pointer;
+}

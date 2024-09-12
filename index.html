@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cerimônia de Seleção</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="./scripts/Seletor.js" defer></script>
+    <script src="./scripts/Dados.js" defer></script>
+    <script src="./scripts/Video.js" defer></script>
+    <script src="./scripts/Casa.js" defer></script>
+    <script src="./scripts/Teste.js" defer></script>
+  </head>
+  <body>
+    <div id="cabeçalho">
+      <h1>Cerimônia de Seleção</h1>
+      <h1>Castelo de Hogwarts</h1>
+    </div>
+    <div class="container">
+      <img id="imagem-casa" src="./img/logo.jfif" alt="Imagem da Casa" />
+      <div id="container-video">
+        <div id="canvas-container"></div>
+        <img id="chapéu" src="./img/hat.jfif" alt="Imagem do Chapéu" />
+      </div>
+      <div id="resultado-container">
+        <h2 id="mensagem-principal">
+          Prepare-se! O Chapéu Seletor vai escolher uma casa pra você ...
+        </h2>
+        <h3 id="resultado"></h3>
+        <p id="descrição"></p>
+        <div id="nomes-times"></div>
+        <div id="parabéns">
+          <h3>
+            Parabéns, continue se esforçando e logo será um(a) grande Bruxo(a)
+            "Dev"
+          </h3>
+        </div>
+      </div>
+    </div>
+    <button id="botão-seleção">Faça a Escolha!</button>
+  </body>
+</html>
